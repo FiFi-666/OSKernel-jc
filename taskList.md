@@ -1,0 +1,26 @@
+# libctest-dynamic尚未完成
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "dlopen", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_cancel_points", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_cancel", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_cond", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_tsd", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "sem_init", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "socket", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "tls_init", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "tls_local_exec", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_robust_detach", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_cond_smasher", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_condattr_setclock", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_exit_cancel", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_once_deadlock", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "pthread_rwlock_ebusy", 0}},
+// {1, {"./runtest.exe", "-w", "entry-dynamic.exe", "statvfs", 0}},
+
+
+
+	// { 1 , {"lmbench_all"  ,  "lat_sig"  ,  "-P"  ,  "1"  ,  "catch"  ,  0	}},
+	// { 1 , {"lmbench_all"  ,  "lat_sig"  ,  "-P"  ,  "1"  ,  "prot"  ,  "lat_sig"  ,  0	}},
+{ 1 , {"lmbench_all"  ,  "lat_pipe"  ,  "-P"  ,  "1"  ,  0	}},
+// { 1 , {"lmbench_all"  ,  "lat_proc"  ,  "-P"  ,  "1"  ,  "shell"  ,  0	}},
+// // { 1 , {"lmbench_all"  ,  "bw_pipe",    "-P"  ,  "1"  ,  0	}},
+{ 1 , {"lmbench_all"  ,  "lat_ctx"  ,  "-P"  ,  "1"  ,  "-s"  ,  "32"  ,  "2"  ,  "4"  ,  0	}},
